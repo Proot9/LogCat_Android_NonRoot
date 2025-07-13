@@ -5,7 +5,7 @@
 
 [![Android](https://img.shields.io/badge/platform-android-green?logo=android)](https://play.google.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Download](https://img.shields.io/badge/Download-APK-brightgreen)](https://github.com/<username>/logger-android/releases/latest)
+[![Download](https://img.shields.io/badge/Download-APK-brightgreen)](https://github.com/Proot9/LogCat_Android_NonRoot/releases/tag/v1.1)
 
 ---
 
@@ -29,7 +29,7 @@
 ---
 
 ## 📥 Download APK
-👉 [**Download LogCat Android v1.0**](https://github.com/<username>/logcat-android/releases/latest)  
+👉 [**Download LogCat Android v1.0**](https://github.com/Proot9/LogCat_Android_NonRoot/releases/tag/v1.1)  
 
 ---
 
