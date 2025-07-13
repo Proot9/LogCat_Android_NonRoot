@@ -53,11 +53,15 @@ Jika kalian ingin update fitur, atau ada masalah dengan aplikasi langsung aja ko
 Dadah Good Luck guys!🔥
 
 ---
+
 ## Kontak Kami
 elzyproot@protonmail.com
+
 ---
+
 ## ☕ Dukungan
-- ❤️ [Saweria](https://saweria.co/elzy01engineer) 
+- ❤️ [Saweria](https://saweria.co/elzy01engineer)
+ 
 ---
 
 ## 📜 Lisensi
