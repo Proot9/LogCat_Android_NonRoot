@@ -1,5 +1,5 @@
 # ⚡ LogCat Android 📱
-![LogCat Android Banner](https://your-cdn-or-repo-path/banner.png)
+![LogCat Android Banner](screenshots/banner.png)
 
 **LogCat Android** adalah aplikasi logcat **tanpa root** dan **tanpa PC** dengan UI simpel yang bahkan bisa digunakan sambil merem 👀. Dirancang untuk developer, opreker, dan siapapun yang ingin memantau log aplikasi lain langsung di HP.
 
