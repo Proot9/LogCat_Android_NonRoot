@@ -8,9 +8,10 @@
 [![Download](https://img.shields.io/badge/Download-APK-brightgreen)](https://github.com/Proot9/LogCat_Android_NonRoot/releases/tag/v1.1)
 
 ---
-## Bahasa
-*
+
+## Bahasa 
 [English 🇬🇧](README_EN.md) | [Русский 🇷🇺](README_RU.md)
+
 ---
 ## 🚀 Fitur Utama
 ✅ **Tanpa root & tanpa PC** – bisa langsung jalan di HP non-root  
