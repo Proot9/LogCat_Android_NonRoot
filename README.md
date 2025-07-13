@@ -29,7 +29,7 @@
 ---
 
 ## 📥 Download APK
-👉 [**Download LogCat Android v1.0**](https://github.com/<username>/logger-android/releases/latest)  
+👉 [**Download LogCat Android v1.0**](https://github.com/<username>/logcat-android/releases/latest)  
 
 ---
 
@@ -40,6 +40,7 @@
 
 ---
 
+## Closing
 Terima kasih untuk dukungan kalian, kami harap aplikasi ini bisa membantu kalian semua yang emang lagi membutuhkan😘
 
 Jika kalian ingin update fitur, atau ada masalah dengan aplikasi langsung aja kontak saya di email📩
@@ -47,10 +48,11 @@ Jika kalian ingin update fitur, atau ada masalah dengan aplikasi langsung aja ko
 Dadah Good Luck guys!🔥
 
 ---
+## Kontak Kami
+elzyproot@protonmail.com
+---
 ## ☕ Dukungan
-- ❤️ [Saweria](https://saweria.co/elzy)  
-- ❤️ [Trakteer](https://trakteer.id/elzy)
-
+- ❤️ [Saweria](https://saweria.co/elzy01engineer) 
 ---
 
 ## 📜 Lisensi
