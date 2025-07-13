@@ -36,7 +36,7 @@
 ## 📸 Screenshot
 | UI Utama                | Panduan di Aplikasi       |
 |-------------------------|----------------------------|
-| ![Screenshot1](screenshots/screen1.png) | ![Screenshot2](screenshots/screen2.png) |
+| ![Screenshot1](screenshots/screen1.jpg) | ![Screenshot2](screenshots/screen2.jpg) |
 
 ---
 
