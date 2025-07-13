@@ -1,7 +1,7 @@
 # ⚡ LogCat Android 📱
 ![LogCat Android Banner](https://your-cdn-or-repo-path/banner.png)
 
-**Logger Android** adalah aplikasi logcat **tanpa root** dan **tanpa PC** dengan UI simpel yang bahkan bisa digunakan sambil merem 👀. Dirancang untuk developer, opreker, dan siapapun yang ingin memantau log aplikasi lain langsung di HP.
+**LogCat Android** adalah aplikasi logcat **tanpa root** dan **tanpa PC** dengan UI simpel yang bahkan bisa digunakan sambil merem 👀. Dirancang untuk developer, opreker, dan siapapun yang ingin memantau log aplikasi lain langsung di HP.
 
 [![Android](https://img.shields.io/badge/platform-android-green?logo=android)](https://play.google.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
