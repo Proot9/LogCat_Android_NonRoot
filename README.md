@@ -29,7 +29,7 @@
 ---
 
 ## 📥 Download APK
-👉 [**Download LogCat Android**](https://github.com/Proot9/LogCat_Android_NonRoot/releases/tag/)  
+👉 [**Download LogCat Android**](https://github.com/Proot9/LogCat_Android_NonRoot/releases/)  
 
 ---
 
