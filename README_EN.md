@@ -25,6 +25,7 @@
 
 ## ⚠️ Important Notes
 📱 **This app works only if:**
+
 1. **LogCat Android** and the target app you want to debug **are running on the same device**.  
    > 🚫 It will not work if you run LogCat on one phone and the target app on another.  
 
@@ -58,7 +59,6 @@ If you want new features or encounter any issues, feel free to contact me via em
 ---
 
 ## ☕ Support Me
-If you appreciate this app, you can buy me a coffee:  
 ❤️ [Saweria](https://saweria.co/elzy01engineer)  
 
 ---
