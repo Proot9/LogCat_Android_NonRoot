@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Menggunakan Logger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panduan Menggunakan Logger</h1>
+
+        <section>
+            <h2>1️⃣ Cara Menggunakan Logger</h2>
+            <p><strong>Tambahkan ini di MainActivity.java</strong></p>
+            <pre><code>MyLogger.init(getApplicationContext());</code></pre>
+            <p><strong>Kirim log dari MainActivity</strong></p>
+            <pre><code>MyLogger.log("MainActivity", "Aplikasi dimulai");</code></pre>
+            <p><strong>Lepas Logger saat aplikasi ditutup</strong></p>
+            <pre><code>protected void onDestroy() {
+    super.onDestroy();
+    MyLogger.destroy(getApplicationContext());
+}</code></pre>
+        </section>
+
+        <section>
+            <h2>📘 Kirim Log dari Class Lain</h2>
+            <p><strong>Dari class Java lain (misalnya MainActivity.java)</strong></p>
+            <pre><code>MyLogger.log("Activity", "Pesan log biasa");
+MyLogger.log("Activity", "[ERROR] Terjadi kesalahan");
+MyLogger.log("Activity", "[WARN] Kapasitas hampir penuh");
+MyLogger.log("Activity", "[SUCCESS] Berhasil");</code></pre>
+        </section>
+
+        <section>
+            <h2>📘 Panggil Logger di Semua Class</h2>
+            <p>Kamu bisa panggil:</p>
+            <pre><code>MyLogger.log("TAG", "Pesan error/debug");</code></pre>
+            <p>Dari mana saja di project-mu, tanpa setup ulang.</p>
+            <p>Logger akan mengirim pesan ke aplikasi Logger yang menampilkan realtime log + menyimpannya ke file.</p>
+        </section>
+
+        <section>
+            <h2>📁 File yang Dibutuhkan:</h2>
+            <p><strong>Tambahkan file berikut ke project-mu:</strong></p>
+            <h3>✅ MyLogger.java</h3>
+            <pre><code>import android.content.Context;
+
+public class MyLogger {
+    private static LoggerHelper loggerHelper;
+
+    public static void init(Context context) {
+        if (loggerHelper == null) {
+            loggerHelper = new LoggerHelper();
+            loggerHelper.bindLogger(context.getApplicationContext());
+        }
+    }
+
+    public static void log(String tag, String message) {
+        if (loggerHelper != null) {
+            loggerHelper.sendLog(tag, message);
+        }
+    }
+
+    public static void destroy(Context context) {
+        if (loggerHelper != null) {
+            loggerHelper.unbindLogger(context.getApplicationContext());
+            loggerHelper = null;
+        }
+    }
+}</code></pre>
+
+            <h3>✅ LoggerHelper.java</h3>
+            <pre><code>public class LoggerHelper {
+    private android.content.Context context;
+    private android.content.ServiceConnection connection;
+
+    public void bindLogger(android.content.Context ctx) {
+        context = ctx;
+        android.content.Intent intent = new android.content.Intent();
+        intent.setClassName("com.logcat.android", "com.logcat.android.LoggerService");
+
+        connection = new android.content.ServiceConnection() {
+            @Override
+            public void onServiceConnected(android.content.ComponentName name, android.os.IBinder service) {
+                // Logger terhubung
+            }
+
+            @Override
+            public void onServiceDisconnected(android.content.ComponentName name) {
+                // Logger terputus
+            }
+        };
+        ctx.bindService(intent, connection, android.content.Context.BIND_AUTO_CREATE);
+    }
+
+    public void sendLog(String tag, String message) {
+        try {
+            android.content.Intent intent = new android.content.Intent("com.logcat.android.LOG_EVENT");
+            intent.setPackage("com.logcat.android");
+            intent.putExtra("tag", tag);
+            intent.putExtra("message", message);
+            context.sendBroadcast(intent);
+        } catch (Exception e) {
+            android.util.Log.e("LoggerHelper", "Gagal kirim log: " + e.getMessage());
+        }
+    }
+
+    public void unbindLogger(android.content.Context ctx) {
+        if (connection != null) {
+            ctx.unbindService(connection);
+            connection = null;
+        }
+    }
+}</code></pre>
+        </section>
+    </div>
+</body>
+</html>
